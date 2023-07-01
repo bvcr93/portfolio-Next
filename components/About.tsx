@@ -1,7 +1,4 @@
-import React from 'react'
-
 export default function About() {
-  return (
-    <div className='h-screen'>About</div>
-  )
-}
+    return <section id="about" className="h-screen">This is the About component</section>;
+  }
+  

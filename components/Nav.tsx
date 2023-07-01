@@ -2,27 +2,62 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { links } from "@/data/links";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
+import { useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 export default function Nav() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [showShadow, setShowShadow] = useState(false);
+  const [showBlur, setShowBlur] = useState(false);
 
   const handleNav = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShowShadow(true);
+        setShowBlur(true);
+      } else {
+        setShowShadow(false);
+        setShowBlur(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="py-5 sticky top-0 w-full bg-[#ecf0f3] shadow-md z-50">
+    <div
+      className={`py-5 sticky top-0 w-full bg-[#ecf0f3] ${
+        showShadow ? "shadow-md" : ""
+      } ${
+        showBlur ? "backdrop-blur-sm bg-transparent" : ""
+      } z-50 transition-all duration-300`}
+    >
       <div className="maincol flex justify-between items-center ">
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
           <Link href="/"> Bvcr</Link>
         </div>
         <div className="gap-10 hidden md:flex">
           {links.map((link) => (
-            <Link className="link" href={link.url}>
+            <ScrollLink
+              className="link"
+              activeClass="active"
+              to={link.name.toLowerCase()} // use name as id of the section
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               {link.name}
-            </Link>
+            </ScrollLink>
           ))}
         </div>
+
         <div className="md:hidden">
           <button onClick={handleNav}>
             <AiOutlineMenu size={24} />

@@ -18,6 +18,10 @@ export const links: Link[] = [
     name: "Projects",
     url: "/projects",
   },
+  {
+    name: "About",
+    url: "/about",
+  },
 ];
 
 export interface Icon {
