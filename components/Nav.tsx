@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <div className="py-5 sticky top-0 w-full shadow-xl">
-      <div className="maincol flex justify-between items-center">
+      <div className="maincol flex justify-between items-center ">
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
           <Link href="/"> Bvcr</Link>
         </div>
@@ -63,15 +63,13 @@ export default function Nav() {
                 </p>
               </div>
               <div className="py-4 flex flex-col">
-                
-                  {links.map((link) => (
-                    <Link className="link" href={link.url}>
-                      <div onClick={handleNav} className="py-4 text-sm uppercase">
-                        {link.name}
-                      </div>
-                    </Link>
-                  ))}
-            
+                {links.map((link) => (
+                  <Link className="link" href={link.url}>
+                    <div onClick={handleNav} className="py-4 text-sm uppercase">
+                      {link.name}
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
