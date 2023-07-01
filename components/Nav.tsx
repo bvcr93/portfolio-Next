@@ -13,6 +13,7 @@ export default function Nav() {
   const handleNav = () => {
     setSidebarOpen(!isSidebarOpen);
   };
+  console.log(isSidebarOpen);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,19 +65,12 @@ export default function Nav() {
             <AiOutlineMenu size={24} />
           </button>
         </div>
+        {/* sidebar */}
         {isSidebarOpen && (
-          <div
-            className={
-              isSidebarOpen
-                ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
-                : ""
-            }
-          >
+          <div className={"fixed left-0 top-0 w-full h-screen bg-black/70   "}>
             <div
               className={
-                isSidebarOpen
-                  ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                  : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                "fixed top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10"
               }
             >
               <div className="flex w-full items-center justify-between">

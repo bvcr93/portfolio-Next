@@ -50,3 +50,4 @@ export const icons: Icon[] = [
     url: "/#resume",
   },
 ];
+
