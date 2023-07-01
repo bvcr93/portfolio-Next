@@ -11,20 +11,22 @@ const Main = () => {
   return (
     <div
       id="home"
-      className={`w-full h-screen text-center ${
+      className={`w-full h-screen text-center maincol ${
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
       } transition-all duration-1000 ease-in-out z-0 relative`}
     >
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto  flex justify-center items-center">
         <div>
-          <h1 className="py-4 text-gray-700 md:text-6xl text-5xl">
-            Hi, I&#39;m <span className="text-[#5651e5]">Darel</span>
+          <h1 className="py-4 text-gray-700 md:text-7xl text-5xl">
+            Hi, I'm <span className="text-[#5651e5]">Darel</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700 text-4xl md:text-5xl">
+            A Front-End Web Developer
+          </h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
             I specialize in creating high-quality, responsive front-end web
             applications with a focus on user experience and modern design
-            principles. 
+            principles.
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

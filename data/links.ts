@@ -1,4 +1,3 @@
-
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -9,7 +8,6 @@ interface Link {
 }
 
 export const links: Link[] = [
- 
   {
     name: "Skills",
     url: "/skills",
@@ -25,30 +23,30 @@ export const links: Link[] = [
 ];
 
 export interface Icon {
-    name: string;
-    component: IconType;
-    url: string;
-  }
-  
-  export const icons: Icon[] = [
-    {
-      name: "LinkedIn",
-      component: FaLinkedinIn,
-      url: "",
-    },
-    {
-      name: "GitHub",
-      component: FaGithub,
-      url: "",
-    },
-    {
-      name: "Mail",
-      component: AiOutlineMail,
-      url: "/#contact",
-    },
-    {
-      name: "Person",
-      component: BsFillPersonLinesFill,
-      url: "/#resume",
-    },
-  ];
+  name: string;
+  component: IconType;
+  url: string;
+}
+
+export const icons: Icon[] = [
+  {
+    name: "LinkedIn",
+    component: FaLinkedinIn,
+    url: "",
+  },
+  {
+    name: "GitHub",
+    component: FaGithub,
+    url: "",
+  },
+  {
+    name: "Mail",
+    component: AiOutlineMail,
+    url: "/#contact",
+  },
+  {
+    name: "Person",
+    component: BsFillPersonLinesFill,
+    url: "/#resume",
+  },
+];

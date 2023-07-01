@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Main from "@/components/Main";
+import Projects from "@/components/Projects";
 import { Figtree, Raleway } from "next/font/google";
 import Head from "next/head";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <title>Darel Bvcr - Frontend Developer</title>
       </Head>
       <Main />
+      <Projects />
       <About />
     </>
   );

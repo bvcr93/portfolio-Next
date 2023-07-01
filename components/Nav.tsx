@@ -4,6 +4,7 @@ import { links } from "@/data/links";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+
 export default function Nav() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [showShadow, setShowShadow] = useState(false);
@@ -42,7 +43,7 @@ export default function Nav() {
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
           <Link href="/"> Bvcr</Link>
         </div>
-        <div className="gap-10 hidden md:flex">
+        <div className="gap-10 hidden md:flex cursor-pointer text-lg">
           {links.map((link) => (
             <ScrollLink
               className="link"
@@ -97,13 +98,20 @@ export default function Nav() {
                   Crafting Web Experiences.
                 </p>
               </div>
-              <div className="py-4 flex flex-col">
+              <div className="py-4 flex flex-col cursor-pointer">
                 {links.map((link) => (
-                  <Link className="link" href={link.url}>
-                    <div onClick={handleNav} className="py-4 text-sm uppercase">
-                      {link.name}
-                    </div>
-                  </Link>
+                  <ScrollLink
+                    className="link"
+                    activeClass="active"
+                    to={link.name.toLowerCase()} // use name as id of the section
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={handleNav}
+                  >
+                    <div className="py-4 text-sm uppercase">{link.name}</div>
+                  </ScrollLink>
                 ))}
               </div>
             </div>
