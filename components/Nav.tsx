@@ -11,7 +11,7 @@ export default function Nav() {
   };
 
   return (
-    <div className="py-5 sticky top-0 w-full shadow-xl">
+    <div className="py-5 sticky top-0 w-full bg-[#ecf0f3] shadow-md z-50">
       <div className="maincol flex justify-between items-center ">
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
           <Link href="/"> Bvcr</Link>

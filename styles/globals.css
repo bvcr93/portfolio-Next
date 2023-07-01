@@ -35,3 +35,14 @@ h1 {
 h1 {
   font-size: 40px;
 }
+
+.translate-enter {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.translate-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
+}
