@@ -13,7 +13,7 @@ export default function Nav() {
   const handleNav = () => {
     setSidebarOpen(!isSidebarOpen);
   };
-  console.log(isSidebarOpen);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +37,7 @@ export default function Nav() {
       className={`py-5 sticky top-0 w-full bg-[#ecf0f3] ${
         showShadow ? "shadow-md" : ""
       } ${
-        showBlur ? "backdrop-blur-sm bg-transparent" : ""
+        showBlur ? "backdrop-blur-lg bg-transparent" : ""
       } z-50 transition-all duration-300`}
     >
       <div className="maincol flex justify-between items-center ">

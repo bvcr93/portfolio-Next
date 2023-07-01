@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className={`w-full h-screen text-center maincol ${
+      className={`w-full md:h-screen my-20 md:my-0 text-center maincol ${
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
       } transition-all duration-1000 ease-in-out z-0 relative`}
     >
