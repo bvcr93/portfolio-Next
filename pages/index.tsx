@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Main from "@/components/Main";
 import Projects from "@/components/Projects";
 import { Figtree, Raleway } from "next/font/google";
@@ -13,8 +14,10 @@ export default function Home() {
         <title>Darel Bvcr - Frontend Developer</title>
       </Head>
       <Main />
-      <Projects />
       <About />
+      <Projects />
+ 
+      <Contact />
     </>
   );
 }

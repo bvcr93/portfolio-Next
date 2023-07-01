@@ -9,16 +9,17 @@ interface Link {
 
 export const links: Link[] = [
   {
-    name: "Skills",
-    url: "/skills",
+    name: "About",
+    url: "/about",
   },
   {
     name: "Projects",
     url: "/projects",
   },
+
   {
-    name: "About",
-    url: "/about",
+    name: "Contact",
+    url: "/contact",
   },
 ];
 
@@ -50,4 +51,3 @@ export const icons: Icon[] = [
     url: "/#resume",
   },
 ];
-

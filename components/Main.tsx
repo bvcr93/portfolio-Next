@@ -20,10 +20,10 @@ const Main = () => {
           <h1 className="py-4 text-gray-700 md:text-7xl text-5xl">
             Hi, I'm <span className="text-[#5651e5]">Darel</span>
           </h1>
-          <h1 className="py-2 text-gray-700 text-4xl md:text-5xl">
+          <h1 className="py-2 text-gray-700 text-4xl md:text-5xl mt-5">
             A Front-End Web Developer
           </h1>
-          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
+          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto leading-7">
             I specialize in creating high-quality, responsive front-end web
             applications with a focus on user experience and modern design
             principles.

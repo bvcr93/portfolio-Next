@@ -14,10 +14,11 @@ export default function Nav() {
     setSidebarOpen(!isSidebarOpen);
   };
 
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      const screenWidth = window.innerWidth;
+
+      if ((window.scrollY > 0 && screenWidth <= 768) || window.scrollY > 400) {
         setShowShadow(true);
         setShowBlur(true);
       } else {
