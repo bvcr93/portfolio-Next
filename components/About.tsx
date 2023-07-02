@@ -1,59 +1,55 @@
+import React from "react";
 import Image from "next/image";
-import next from "../public/next.webp";
-export default function About() {
-  return (
-    <section
-      id="about"
-      className="min-h-screen maincol mt-10 flex  leading-7 border rounded-xl"
-    >
-      <section className="basis-1/2 p-4">
-        <p>
-          As a passionate and experienced frontend developer with a year of
-          expertise in React, Next.js, TypeScript, Tailwind CSS, and other
-          modern web technologies, I, Darel, thrive in crafting exceptional web
-          experiences. Based in Zagreb, Croatia, my dedication to delivering
-          professional solutions resonates through my portfolio, showcasing my
-          commitment to excellence in the ever-evolving field of frontend
-          development. With a strong focus on frontend development, I, Darel,
-          bring a wealth of knowledge and expertise to every project. I am
-          well-versed in designing and implementing user-friendly interfaces,
-          optimizing website performance, and ensuring cross-browser
-          compatibility. My deep understanding of responsive design principles
-          enables me to create seamless experiences across different devices and
-          screen sizes. By staying up-to-date with the latest industry trends
-          and best practices, I continuously expand my skill set to deliver
-          cutting-edge solutions. Collaborative by nature, I thrive in agile
-          development environments, working closely with cross-functional teams
-          to achieve project goals efficiently and effectively. With a keen eye
-          for detail and a passion for clean and maintainable code, I
-          consistently strive for excellence in all aspects of frontend
-          development.
-        </p>
-      </section>
-      <section className="basis-1/2 p-4 flex flex-col gap-10">
-        <p>
-          <Image
-            src={next}
-            width={1000}
-            height={1000}
-            alt=""
-            className="rounded-xl shadow-lg"
-          />
-        </p>
-        <p>
-          <Image
-            src={next}
-            width={1000}
-            height={1000}
-            alt=""
-            className="rounded-xl shadow-lg"
-          />
-        </p>
-      </section>
-      {/* 
-      
+import Link from "next/link";
+import tw from "../public/tw.png";
+import { aboutCards } from "@/data/aboutCards";
+import AboutCard from "./AboutCard";
 
-      */}
-    </section>
+const About = () => {
+  return (
+    <div id="about" className="w-full maincol flex flex-col items-center py-24">
+      <div className="md:flex grid-cols-3 gap-8">
+        <div className="col-span-2 basis-1/2 ">
+          <h1 className=" text-gray-700">About</h1>
+          <h2 className="py-4">Who I Am</h2>
+          <p className="py-2 text-gray-600 md:text-lg leading-7">
+            I am an adept professional specializing in the construction of
+            mobile-responsive front-end UI applications that interface
+            seamlessly with APIs and various backend technologies. I thrive on
+            exploring and mastering new technologies, understanding the variety
+            of paths available to complete a task. While I excel in creating
+            front-end applications employing HTML, CSS, JavaScript, and React, I
+            am also capable of rapidly learning and adapting to new tech stacks
+            as required. I firmly believe that being a successful developer
+            involves selecting the most suitable tool for the task at hand, not
+            merely sticking to a specific language.
+          </p>
+
+          <Link href="/#projects">
+            <p className="py-2 text-gray-600 underline underline-offset-4 cursor-pointer italic font-bold">
+              Check out some of my latest projects.
+            </p>
+          </Link>
+        </div>
+        <div
+          className="w-full basis-1/2 h-auto m-auto shadow-gray-400 rounded-xl 
+        flex items-center justify-center"
+        >
+          <Image
+            src={tw}
+            className="rounded-xl mt-16 md:mt-0 md:w-[50%]"
+            alt="/"
+            width={200}
+          />
+        </div>
+      </div>
+      <div className="w-full mt-24 gap-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ">
+        {aboutCards.map((card) => (
+          <AboutCard {...card} key={card.title} />
+        ))}
+      </div>
+    </div>
   );
-}
+};
+
+export default About;

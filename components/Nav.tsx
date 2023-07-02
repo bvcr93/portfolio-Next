@@ -18,7 +18,7 @@ export default function Nav() {
     const handleScroll = () => {
       const screenWidth = window.innerWidth;
 
-      if ((window.scrollY > 0 && screenWidth <= 768) || window.scrollY > 400) {
+      if ((window.scrollY > 0 && screenWidth < 768) || window.scrollY > 200) {
         setShowShadow(true);
         setShowBlur(true);
       } else {
