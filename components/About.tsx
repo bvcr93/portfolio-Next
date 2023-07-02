@@ -7,12 +7,13 @@ import AboutCard from "./AboutCard";
 
 const About = () => {
   return (
-    <div id="about" className="w-full maincol flex flex-col items-center py-24">
+    <div id="about" className="w-full maincol flex flex-col items-center md:py-24">
       <div className="md:flex grid-cols-3 gap-8">
         <div className="col-span-2 basis-1/2 ">
           <h1 className=" text-gray-700">About</h1>
+          <div className="md:ml-48 ml-0">
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600 md:text-lg leading-7">
+          <p className="py-2 text-gray-600 md:text-lg leading-7 ">
             I am an adept professional specializing in the construction of
             mobile-responsive front-end UI applications that interface
             seamlessly with APIs and various backend technologies. I thrive on
@@ -24,12 +25,13 @@ const About = () => {
             involves selecting the most suitable tool for the task at hand, not
             merely sticking to a specific language.
           </p>
-
+         
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline underline-offset-4 cursor-pointer italic font-bold">
               Check out some of my latest projects.
             </p>
           </Link>
+        </div>
         </div>
         <div
           className="w-full basis-1/2 h-auto m-auto shadow-gray-400 rounded-xl 
@@ -37,7 +39,7 @@ const About = () => {
         >
           <Image
             src={tw}
-            className="rounded-xl mt-16 md:mt-0 md:w-[50%]"
+            className="rounded-xl mt-16 md:mt-0 md:w-[50%] hidden md:flex"
             alt="/"
             width={200}
           />

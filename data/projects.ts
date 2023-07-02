@@ -30,4 +30,10 @@ export const projects: Project[] = [
     image: car,
     id: 3,
   },
+  {
+    name: "Car Tuning",
+    url: "https://v18-nu.vercel.app/",
+    image: car,
+    id: 3,
+  },
 ];

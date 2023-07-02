@@ -17,11 +17,11 @@ export default function Contact() {
   return (
     <form
       onSubmit={onSubmit}
-      className="mt-20 maincol min-h-screen flex flex-col items-center "
+      className="maincol md:py-16 flex flex-col items-center pb-28 "
       id="contact"
     >
       <div className="w-full flex items-start">
-        <h1>get in touch</h1>
+        <h1>Get in touch</h1>
       </div>
       <div className="flex gap-2 flex-col w-full lg:w-2/3 mx-auto mt-10">
         <div className="flex gap-x-4 w-full">

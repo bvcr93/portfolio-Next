@@ -18,8 +18,8 @@ export default function AboutCard({
       <div className="w-full h-12  basis-1/3 flex items-center justify-center">
         <Icon size={40} />
       </div>
-      <div className=" basis-1/3 flex justify-center items-center bg-white">{title}</div>
-      <div className=" basis-1/3 flex items-center text-center">{description}</div>
+      <div className=" basis-1/3 flex justify-center items-center bg-white font-semibold">{title}</div>
+      <div className=" basis-1/3 flex items-center text-center font-light">{description}</div>
     </div>
   );
 }
