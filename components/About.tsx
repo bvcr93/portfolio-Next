@@ -1,9 +1,10 @@
-import React from "react";
+import { aboutCards } from "@/data/aboutCards";
 import Image from "next/image";
 import Link from "next/link";
+import "react-vertical-timeline-component/style.min.css";
 import tw from "../public/tw.png";
-import { aboutCards } from "@/data/aboutCards";
 import AboutCard from "./AboutCard";
+import VerticalTimelineComp from "./VerticalTimeline";
 
 const About = () => {
   return (
@@ -53,6 +54,7 @@ const About = () => {
           <AboutCard {...card} key={card.title} />
         ))}
       </div>
+      <VerticalTimelineComp />
     </div>
   );
 };
