@@ -4,12 +4,15 @@ import { links } from "@/data/links";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function Nav() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [showShadow, setShowShadow] = useState(false);
   const [showBlur, setShowBlur] = useState(false);
-
+  const { dark, toggle } = useContext(ThemeContext);
   const handleNav = () => {
     setSidebarOpen(!isSidebarOpen);
   };
@@ -35,7 +38,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`py-5 sticky top-0 w-full bg-[#ecf0f3] ${
+      className={`py-5 sticky top-0 w-full text-black dark:text-white bg-[#ecf0f3] dark:bg-black  ${
         showShadow ? "shadow-md" : ""
       } ${
         showBlur ? "backdrop-blur-lg bg-transparent" : ""
@@ -59,6 +62,9 @@ export default function Nav() {
               {link.name}
             </ScrollLink>
           ))}
+          <div className="flex items-center justify-center">
+            <div onClick={toggle}>{dark ? <FiSun /> : <FiMoon />}</div>
+          </div>
         </div>
 
         <div className="md:hidden">
