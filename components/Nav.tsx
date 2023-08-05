@@ -38,7 +38,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`py-5 sticky top-0 w-full text-black dark:text-white bg-[#ecf0f3] dark:bg-black  ${
+      className={`py-5 sticky top-0 w-full text-black dark:text-white bg-slate-100 dark:bg-black  ${
         showShadow ? "shadow-md" : ""
       } ${
         showBlur ? "backdrop-blur-lg bg-transparent" : ""

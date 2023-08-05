@@ -1,9 +1,8 @@
-import Image, { StaticImageData } from "next/image";
-import tuning from "../public/tuning.png";
+import { StaticImageData } from "next/image";
+import car from "../public/car.png";
 import ecommerce from "../public/ecommerce.png";
 import v18 from "../public/v18.png";
-import car from "../public/car.png";
-
+import dog2 from "../public/dog2.jpg";
 export interface Project {
   name: string;
   url: string;
@@ -31,9 +30,9 @@ export const projects: Project[] = [
     id: 3,
   },
   {
-    name: "Car Tuning",
-    url: "https://v18-nu.vercel.app/",
-    image: car,
+    name: "Pet Care",
+    url: "https://petcare-six.vercel.app/",
+    image: dog2,
     id: 3,
   },
 ];

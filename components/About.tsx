@@ -5,16 +5,19 @@ import "react-vertical-timeline-component/style.min.css";
 import tw from "../public/tw.png";
 import AboutCard from "./AboutCard";
 import VerticalTimelineComp from "./VerticalTimeline";
+import { useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const About = () => {
+
   return (
     <div
-      id="about"
-      className="w-full maincol flex flex-col items-center md:py-24"
-    >
-      <div className="md:flex grid-cols-3 gap-8 md:mt-0">
+    id="about"
+    className={`w-full maincol flex flex-col items-center md:py-24 `}
+  >
+      <div className={"md:flex grid-cols-3 gap-8 md:mt-0"}>
         <div className="col-span-2 basis-1/2 ">
-          <h1 className=" text-gray-700">About</h1>
+          <h1 className={` text-gray-700`}>About</h1>
           <div className="md:ml-48 ml-0">
             <h2 className="py-4">Who I Am</h2>
             <p className="py-2 text-gray-600 md:text-lg leading-7 ">
@@ -54,7 +57,9 @@ const About = () => {
           <AboutCard {...card} key={card.title} />
         ))}
       </div>
+      
       <VerticalTimelineComp />
+     
     </div>
   );
 };

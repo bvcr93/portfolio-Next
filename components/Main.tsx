@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className={`w-full md:h-screen my-20 md:my-0 text-center maincol text-gray-700 dark:text-white bg-[#ecf0f3] dark:bg-black ${
+      className={`w-full md:h-screen my-20 md:my-0 text-center maincol text-gray-700 dark:text-white bg-slate-100 dark:bg-black ${
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
       } transition-all duration-1000 ease-in-out z-0 relative`}
     >

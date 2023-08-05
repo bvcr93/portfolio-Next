@@ -5,53 +5,42 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaSchool } from "react-icons/fa";
-
+import { useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
 export default function VerticalTimelineComp() {
+  const { dark } = useContext(ThemeContext);
+  const theme = dark ? "bg-black text-white" : "bg-slate-100 text-black";
   return (
-    <div className="w-full">
+    <div className={`w-full `}>
       <VerticalTimeline>
-        <div className="mt-20">
+        <div className="mt-10">
           <VerticalTimelineElement
-            className="vertical-timeline-element--work "
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            className="vertical-timeline-element--work"
+            date="2015 - 2022"
+            iconStyle={{ background: "rgb(23, 147, 182)", color: "#fff" }}
             icon={<FaSchool />}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              Technician for auxiliary power supplies and high voltage elements
+              in electrical substations
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading lorem50
-            </p>
+            <h4 className="vertical-timeline-element-subtitle">
+              Rijeka, Croatia
+            </h4>
           </VerticalTimelineElement>
         </div>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaSchool />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
+          date="2022 - 2023"
           icon={<FaSchool />}
         >
           <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
+            ITAcademy Frontend Developer Bootcamp
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
+          <h4 className="vertical-timeline-element-subtitle">
+            Online Bootcamp
+          </h4>
+          <p>Javascript, React, Typescript</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -64,23 +53,7 @@ export default function VerticalTimelineComp() {
           <h4 className="vertical-timeline-element-subtitle">Certification</h4>
           <p>Creative Direction, User Experience, Visual Design</p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          icon={<FaSchool />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<FaSchool />}
-        />
+       
       </VerticalTimeline>
     </div>
   );
