@@ -13,7 +13,7 @@ export default function VerticalTimelineComp() {
   return (
     <div className={`w-full `}>
       <VerticalTimeline>
-        <div className="mt-10">
+        <div className="mt-20">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2015 - 2022"
@@ -33,6 +33,7 @@ export default function VerticalTimelineComp() {
           className="vertical-timeline-element--education"
           date="2022 - 2023"
           icon={<FaSchool />}
+          iconStyle={{ background: "rgb(95, 91, 219)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
             ITAcademy Frontend Developer Bootcamp
@@ -46,6 +47,7 @@ export default function VerticalTimelineComp() {
           className="vertical-timeline-element--education"
           date="November 2012"
           icon={<FaSchool />}
+          iconStyle={{ background: "rgb(91, 219, 153)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
             Agile Development Scrum Master
@@ -53,7 +55,6 @@ export default function VerticalTimelineComp() {
           <h4 className="vertical-timeline-element-subtitle">Certification</h4>
           <p>Creative Direction, User Experience, Visual Design</p>
         </VerticalTimelineElement>
-       
       </VerticalTimeline>
     </div>
   );

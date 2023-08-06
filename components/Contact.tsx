@@ -1,8 +1,6 @@
-import React from "react";
-import Input from "./Input";
-import { useForm } from "react-hook-form";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
   const { dark } = useContext(ThemeContext);
@@ -32,8 +30,8 @@ export default function Contact() {
       </div>
       <div className="flex gap-2 flex-col w-full lg:w-2/3 mx-auto mt-10">
         <div className="flex gap-x-4 w-full">
-          <Input
-            name="email"
+        <input
+            {...register("email", { required: "Email is required" })}
             type="email"
             className="p-3 rounded-lg border border-gray-400 w-full outline-none"
             placeholder="Email"
@@ -41,8 +39,8 @@ export default function Contact() {
         </div>
 
         <div>
-          <textarea
-            name="message"
+        <textarea
+            {...register("body", { required: "Message is required" })} // rename "message" to "body"
             placeholder="Type your message here"
             className="w-full p-3 rounded-lg border border-gray-400 outline-none"
             rows={6}

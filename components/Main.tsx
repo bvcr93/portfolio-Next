@@ -1,6 +1,7 @@
 import { Icon, icons } from "@/data/links";
 import { useEffect, useState } from "react";
-
+import w from "@/public/w.jpg";
+import Image from "next/image";
 const Main = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -15,8 +16,9 @@ const Main = () => {
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
       } transition-all duration-1000 ease-in-out z-0 relative`}
     >
-      <div className="maincol h-full mx-auto  flex justify-center items-center">
+      <div className="maincol h-full mx-auto flex justify-center items-center">
         <div>
+          
           <h1 className="py-4  md:text-7xl text-5xl">
             Hi, I'm <span className="text-cyan-500">Darel</span>
           </h1>
