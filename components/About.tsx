@@ -7,17 +7,17 @@ import AboutCard from "./AboutCard";
 import VerticalTimelineComp from "./VerticalTimeline";
 
 const About = () => {
-
   return (
     <div
-    id="about"
-    className={`w-full maincol flex flex-col items-center md:py-24 bg-slate-100`}
-  >
+      id="about"
+      className={`w-full maincol flex flex-col items-center md:py-24 bg-slate-100`}
+    >
+      {" "}
+      <h1 className={` text-gray-700 mb-20 text-center`}>About</h1>
       <div className={"md:flex grid-cols-3 gap-8 md:mt-0"}>
-        <div className="col-span-2 basis-1/2 ">
-          <h1 className={` text-gray-700 mb-20`}>About</h1>
-          <div className="md:ml-48 ml-0">
-            <h2 className="py-4">Who I Am</h2>
+        <div className="col-span-2 basis-1/2">
+          <div className="md:ml-20 ">
+            <h2 className="py-4 text-2xl">Who I Am</h2>
             <p className="py-2 text-gray-600 md:text-lg leading-7 ">
               I am an adept professional specializing in the construction of
               mobile-responsive front-end UI applications that interface
@@ -55,9 +55,7 @@ const About = () => {
           <AboutCard {...card} key={card.title} />
         ))}
       </div>
-      
       <VerticalTimelineComp />
-     
     </div>
   );
 };

@@ -1,10 +1,7 @@
-import { ThemeContext } from "@/context/ThemeContext";
-import { useContext } from "react";
 import { useForm } from "react-hook-form";
 
 export default function Contact() {
-  const { dark } = useContext(ThemeContext);
-  const theme = dark ? "bg-neutral-900 text-white" : "bg-slate-100 text-black";
+  const theme = "bg-slate-100 text-black";
   const {
     register,
     trigger,
@@ -25,12 +22,12 @@ export default function Contact() {
       className={`maincol md:py-16 flex flex-col items-center pb-28 ${theme}`}
       id="contact"
     >
-      <div className="w-full flex items-start">
-        <h1>Get in touch</h1>
+      <div className="w-full flex items-start justify-center">
+        <h1 className="">Get in touch</h1>
       </div>
       <div className="flex gap-2 flex-col w-full lg:w-2/3 mx-auto mt-10">
         <div className="flex gap-x-4 w-full">
-        <input
+          <input
             {...register("email", { required: "Email is required" })}
             type="email"
             className="p-3 rounded-lg border border-gray-400 w-full outline-none"
@@ -39,7 +36,7 @@ export default function Contact() {
         </div>
 
         <div>
-        <textarea
+          <textarea
             {...register("body", { required: "Message is required" })} // rename "message" to "body"
             placeholder="Type your message here"
             className="w-full p-3 rounded-lg border border-gray-400 outline-none"

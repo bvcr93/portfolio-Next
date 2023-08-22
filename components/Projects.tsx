@@ -5,7 +5,7 @@ import ProjectItem from "./ProjectItem";
 export default function Projects() {
   return (
     <div id="projects" className={`h-full maincol py-28 bg-slate-100 `}>
-      <h1 className="text-gray-700 mb-20">What I've built</h1>
+      <h1 className="text-gray-700 mb-20 text-center">What I've built</h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 mt-10 gap-10 md:p-10 rounded-xl shadow-2xl">
         {projects.map((project: Project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>

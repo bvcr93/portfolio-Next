@@ -6,10 +6,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaSchool } from "react-icons/fa";
 import { useContext } from "react";
-import { ThemeContext } from "@/context/ThemeContext";
+
 export default function VerticalTimelineComp() {
-  const { dark } = useContext(ThemeContext);
-  const theme = dark ? "bg-black text-white" : "bg-slate-100 text-black";
+  const theme = "bg-black text-white";
   return (
     <div className={`w-full `}>
       <VerticalTimeline>
