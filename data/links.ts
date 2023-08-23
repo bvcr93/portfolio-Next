@@ -21,6 +21,7 @@ export const links: Link[] = [
     name: "Contact",
     url: "/contact",
   },
+  
 ];
 
 export interface Icon {

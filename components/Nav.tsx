@@ -35,17 +35,17 @@ export default function Nav() {
 
   return (
     <div
-      className={`py-5 sticky top-0 w-full text-black dark:text-white bg-slate-100 dark:bg-black  ${
+      className={`py-5 sticky top-0 w-full  text-black dark:text-white bg-slate-100 dark:bg-black  ${
         showShadow ? "shadow-md" : ""
       } ${
-        showBlur ? "backdrop-blur-lg bg-transparent" : ""
+        showBlur ? "" : ""
       } z-50 transition-all duration-300`}
     >
-      <div className="maincol flex justify-between items-center ">
+      <div className=" flex justify-between items-center maincol ">
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
           <Link href="/"> Bvcr</Link>
         </div>
-        <div className="gap-10 hidden md:flex cursor-pointer text-lg">
+        <div className="hidden gap-x-10  md:flex cursor-pointer text-lg ">
           {links.map((link) => (
             <ScrollLink
               className="link"
@@ -59,7 +59,7 @@ export default function Nav() {
               {link.name}
             </ScrollLink>
           ))}
-          <div className="flex items-center justify-center"></div>
+    
         </div>
 
         <div className="md:hidden">

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 
 export default function Contact() {
-  const theme = "bg-slate-100 text-black";
+  const theme = "bg-transparent text-black";
   const {
     register,
     trigger,
@@ -23,7 +23,7 @@ export default function Contact() {
       id="contact"
     >
       <div className="w-full flex items-start justify-center">
-        <h1 className="">Get in touch</h1>
+        <h1 className="text-neutral-700">Get in touch</h1>
       </div>
       <div className="flex gap-2 flex-col w-full lg:w-2/3 mx-auto mt-10">
         <div className="flex gap-x-4 w-full">
@@ -37,7 +37,7 @@ export default function Contact() {
 
         <div>
           <textarea
-            {...register("body", { required: "Message is required" })} // rename "message" to "body"
+            {...register("body", { required: "Message is required" })} 
             placeholder="Type your message here"
             className="w-full p-3 rounded-lg border border-gray-400 outline-none"
             rows={6}

@@ -30,10 +30,10 @@ const Main = () => {
             principles.
           </p>
 
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4 ">
+          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {icons.map((icon: Icon) => (
-              <div key={icon.name}>
-                <div className="rounded-full shadow-xl   shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div key={icon.name} >
+                <div className="rounded-full shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <icon.component />
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Main = () => {
         </div>
       </div>
       <svg
-        className="w-full absolute md:bottom-20 md:left-0 hidden md:inline"
+        className="w-full absolute md:bottom-0 md:left-0 hidden md:inline"
         width="100%"
         height="30%"
         viewBox="0 0 1000 1000"

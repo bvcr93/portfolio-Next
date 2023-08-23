@@ -33,11 +33,5 @@ export const projects: Project[] = [
     id: 3,
     tech: ["NextJS", "Typescript", "Contentful", "Framer Motion"],
   },
-  {
-    name: "Pet Care",
-    url: "https://petcare-six.vercel.app/",
-    image: dog2,
-    id: 3,
-    tech: ["NextJS", "Typescript", "PlanetScale", "Prisma", "tRPC"],
-  },
+
 ];

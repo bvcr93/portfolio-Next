@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className={`w-full maincol flex flex-col items-center md:py-24 bg-slate-100`}
+      className={`w-full maincol flex flex-col items-center md:py-24 `}
     >
       {" "}
       <h1 className={` text-gray-700 mb-20 text-center`}>About</h1>
