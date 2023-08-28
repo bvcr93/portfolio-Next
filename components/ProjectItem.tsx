@@ -13,9 +13,9 @@ export default function ProjectItem({ name, image }: ProjectItemProps) {
         alt=""
         width={1000}
         height={1000}
-        className=" object-contain rounded-xl "
+        className=" object-contain  "
       />
-      <div className="inset-0 rounded-xl absolute opacity-0 hover:opacity-70 bg-black duration-500 flex items-center justify-center text-white text-2xl">
+      <div className="inset-0 absolute opacity-0 hover:opacity-70 bg-black duration-500 flex items-center justify-center text-white text-2xl">
         {name}
       </div>
     </div>

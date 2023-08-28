@@ -5,12 +5,10 @@ import ProjectItem from "./ProjectItem";
 import { useState } from "react";
 
 export default function Projects() {
-
-
   return (
     <div id="projects" className={`h-full maincol pb-20  `}>
       <h1 className="text-gray-700 mb-20 text-center">What I've built</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 mt-10 gap-10 md:p-10 rounded-xl shadow-2xl">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 bg-neutral-100 xl:grid-cols-2 mt-10  rounded-xl shadow-2xl">
         {projects.map((project: Project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>
             <section className="basis-1/2 flex border relative  cursor-pointer mt-5 md:mt-0 rounded-xl">
@@ -44,10 +42,8 @@ export default function Projects() {
             and TypeScript
           </div>
         </Link>
-      
-   
+
         <Link
-         
           href="https://www.ingbiro.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -69,9 +65,7 @@ export default function Projects() {
           </div>
         </Link>
       </div>
-      <div className="mt-20">
-      <Link href='/ideas' className="text-xl font-light italic underline ">ideas page</Link>
-      </div>
+      <div className="mt-20"></div>
     </div>
   );
 }

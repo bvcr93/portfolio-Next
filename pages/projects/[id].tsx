@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ReactElement, useEffect, useState } from "react";
 import { BsChevronRight } from "react-icons/bs";
+import Button from "@/components/Button";
+import ProjectDemoBanner from "@/components/ProjectDemoBanner";
 export default function ProjectDetails() {
   const [selectedColor, setSelectedColor] = useState("blue-500");
   const [isColorActive, setIsColorActive] = useState(false);
@@ -25,19 +27,13 @@ export default function ProjectDetails() {
   return (
     <div className="relative h-full maincol min-h-screen">
       <h1>Project Details - {project.name}</h1>
-      <Link href={project.url}>
-        <div className="relative cursor-pointer">
-          <Image
-            width={1000}
-            height={1000}
-            src={project.image.src}
-            alt={project.name}
-            className="h-[300px] w-full object-cover"
-          />
 
-          <div className="absolute inset-0 bg-black opacity-60"></div>
-        </div>
-      </Link>
+      <ProjectDemoBanner
+        name={project.name}
+        imageUrl={project.image.src}
+        projectUrl={project.url}
+      />
+
       <section className="mt-10">
         <h1>Technologies I Use:</h1>
         <p>{project.tech}</p>
