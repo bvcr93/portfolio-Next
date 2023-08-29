@@ -25,7 +25,7 @@ export default function ProjectDetails() {
   const hoverColorClass = isColorActive ? "bg-blue-500" : "";
 
   return (
-    <div className="relative h-full maincol min-h-screen">
+    <div className="relative h-full maincol min-h-screen mt-20">
       <h1>Project Details - {project.name}</h1>
 
       <ProjectDemoBanner
