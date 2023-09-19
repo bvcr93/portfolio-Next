@@ -22,28 +22,6 @@ export default function Projects() {
       </div>
       <div className="w-full md:flex grid  grid-cols-1 place-items-center mt-10 gap-5 ">
         <Link
-          href="https://petcare-six.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="md:w-1/2 w-full relative rounded-xl h-72 border border-black justify-center flex flex-col items-center cursor-pointer px-10"
-        >
-          <div className="flex w-full justify-between">
-            {" "}
-            <h1 className="text-3xl font-bold text-neutral-700">Pet Care</h1>
-            <BsArrowRight
-              size={30}
-              className="hover:transform duration-300 hover:scale-110"
-            />
-          </div>
-          <div className="flex mt-16 text-gray-600 italic font-light">
-            Facilitates pet owners in managing their furry friends' needs, from
-            scheduling vet visits to tracking daily walks and feedings, all in
-            one intuitive platform. I have been working with Tailwind CSS, tRPC
-            and TypeScript
-          </div>
-        </Link>
-
-        <Link
           href="https://www.ingbiro.com/"
           target="_blank"
           rel="noopener noreferrer"

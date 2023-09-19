@@ -1,11 +1,9 @@
 import { IconType } from "react-icons";
-import { GiMaterialsScience } from "react-icons/gi";
 import { DiJavascript1 } from "react-icons/di";
-import { AiFillHtml5 } from "react-icons/ai";
-import { SiNextdotjs } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+import { GiMaterialsScience } from "react-icons/gi";
 import { MdOutlinePsychology } from "react-icons/md";
-
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
 interface AboutCard {
   Icon: IconType;
   title: string;
@@ -15,20 +13,21 @@ interface AboutCard {
 export const aboutCards: AboutCard[] = [
   {
     Icon: GiMaterialsScience,
-    title: "Material Science",
+    title: "React",
     description:
-      "I have a background in Material Science and Engineering. ",
+      "I have experience with React, a JavaScript library for building user interfaces. ",
   },
   {
     Icon: DiJavascript1,
     title: "JavaScript",
-    description: "I have experience with JavaScript, TypeScript, and React.",
+    description:
+      "Experience with JavaScript, the programming language of the web.",
   },
   {
-    Icon: AiFillHtml5,
-    title: "HTML5",
+    Icon: SiTypescript,
+    title: "TypeScript",
     description:
-      "I am proficient in HTML5, structuring responsive and accessible web pages.",
+      "I love to use TypeScript, a superset of JavaScript, to write more reliable code.",
   },
   {
     Icon: SiNextdotjs,
@@ -43,9 +42,9 @@ export const aboutCards: AboutCard[] = [
       "I have experience with the utility-first CSS framework Tailwind CSS, enabling rapid UI development.",
   },
   {
-    Icon: MdOutlinePsychology,
-    title: "Psychology",
+    Icon: SiPrisma,
+    title: "Prisma",
     description:
-      "I have interest and knowledge in basic principles of psychology that are relevant to UI/UX design.",
+      "I have experience with Prisma, a database toolkit, for database management.",
   },
 ];

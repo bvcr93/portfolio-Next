@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 import camping from "../public/camping.jpg";
 import clothing from "../public/clothinh.jpg";
+import ai3 from "../public/ai3.jpg";
 import dog2 from "../public/dog2.jpg";
 import tuning from "../public/tune.jpg";
 export interface Project {
@@ -13,11 +14,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "E-commerce",
-    url: "https://e-commerce-livid-pi.vercel.app/",
-    image: clothing,
+    name: "PetCare",
+    url: "https://petcare-six.vercel.app/",
+    image: dog2,
     id: 1,
-    tech: ["React", "Styled Components"],
+    tech: [
+      "Next JS",
+      "TypeScript",
+      "tRPC",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "NextAuth",
+    ],
   },
   {
     name: "V18 Rentals",
@@ -33,5 +42,11 @@ export const projects: Project[] = [
     id: 3,
     tech: ["NextJS", "Typescript", "Contentful", "Framer Motion"],
   },
-
+  {
+    name: "Ai Chatbot",
+    url: "https://saas-ai-chat.vercel.app/",
+    image: ai3,
+    id: 4,
+    tech: ["NextJS", "Typescript", "OpenAi API"],
+  },
 ];

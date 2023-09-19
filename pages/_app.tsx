@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <Nav />
         {page}
         <Footer />
-        <div
+        {/* <div
           id="cursor-trail-container"
           style={{
             position: "fixed",
@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
             pointerEvents: "none",
           }}
         ></div>
-        <CursorTrail />
+        <CursorTrail /> */}
       </>
     ));
 

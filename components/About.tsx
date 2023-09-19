@@ -19,16 +19,9 @@ const About = () => {
           <div className="md:ml-20 ">
             <h2 className="py-4 text-2xl">Who I Am</h2>
             <p className="py-2 text-gray-600 md:text-lg leading-7 ">
-              I am an adept professional specializing in the construction of
-              mobile-responsive front-end UI applications that interface
-              seamlessly with APIs and various backend technologies. I thrive on
-              exploring and mastering new technologies, understanding the
-              variety of paths available to complete a task. While I excel in
-              creating front-end applications employing HTML, CSS, JavaScript,
-              and React, I am also capable of rapidly learning and adapting to
-              new tech stacks as required. I firmly believe that being a
-              successful developer involves selecting the most suitable tool for
-              the task at hand, not merely sticking to a specific language.
+              Working in Zagreb, Croatia. Crafting mobile-responsive UIs, fluent
+              in React and Next js. Adaptable, tech-curious, and dedicated to
+              choosing the right tool for every challenge. 🚀
             </p>
 
             <Link href="/#projects">
