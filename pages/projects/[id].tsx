@@ -26,38 +26,13 @@ export default function ProjectDetails() {
 
   return (
     <div className="relative h-full maincol min-h-screen mt-20">
-      <h1>Project Details - {project.name}</h1>
+      <h1 className="mb-10">{project.name}</h1>
 
       <ProjectDemoBanner
         name={project.name}
         imageUrl={project.image.src}
         projectUrl={project.url}
       />
-
-      <section className="mt-10">
-        <h1>Technologies I Use:</h1>
-        <p>{project.tech}</p>
-      </section>
-      <div className="w-full flex flex-col">
-        <div
-          className={`flex justify-between gap-x-10 border w-2/3  rounded relative  hover:shadow-md duration-300 cursor-pointer`}
-          onMouseEnter={() => setIsColorActive(true)}
-          onMouseLeave={() => setIsColorActive(false)}
-        >
-          <div className={colorClass}></div>
-          <div className="basis-2/3 text-3xl font-mono italic py-3 px-3 text-center">
-            Making of the project
-          </div>
-          <div
-            className={`basis-1/3 flex items-center justify-end px-3 ${hoverColorClass}`}
-          >
-            <BsChevronRight size={20} />
-          </div>
-        </div>
-        <div className="flex"></div>
-        <div className="flex"></div>
-        <div className="flex"></div>
-      </div>
     </div>
   );
 }
