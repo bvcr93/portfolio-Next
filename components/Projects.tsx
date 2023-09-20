@@ -2,7 +2,6 @@ import { Project, projects } from "@/data/projects";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import ProjectItem from "./ProjectItem";
-import { useState } from "react";
 
 export default function Projects() {
   return (
@@ -22,10 +21,10 @@ export default function Projects() {
       </div>
       <div className="w-full md:flex grid  grid-cols-1 place-items-center mt-10 gap-5 ">
         <Link
-          href="https://www.ingbiro.com/"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover-darken-text md:w-1/2 w-full relative rounded-xl h-72 border border-black justify-center flex flex-col items-center cursor-pointer px-10"
+          className="hover-darken-text md:w-1/2 w-full relative rounded-xl h-72 border border-black justify-center flex flex-col items-center cursor-pointer px-10"
         >
           <div className="flex w-full justify-between">
             {" "}

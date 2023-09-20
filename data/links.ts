@@ -21,7 +21,6 @@ export const links: Link[] = [
     name: "Contact",
     url: "/contact",
   },
-  
 ];
 
 export interface Icon {
@@ -45,10 +44,5 @@ export const icons: Icon[] = [
     name: "Mail",
     component: AiOutlineMail,
     url: "/#contact",
-  },
-  {
-    name: "Person",
-    component: BsFillPersonLinesFill,
-    url: "/#resume",
   },
 ];
