@@ -2,6 +2,7 @@ import { Icon, icons } from "@/data/links";
 import { useEffect, useState } from "react";
 import w from "@/public/w.jpg";
 import Image from "next/image";
+import Link from "next/link";
 const Main = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -32,11 +33,11 @@ const Main = () => {
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {icons.map((icon: Icon) => (
-              <div key={icon.name}>
+              <Link href={`${icon.url}`} key={icon.name}>
                 <div className="rounded-full shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <icon.component />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="w-full"></div>

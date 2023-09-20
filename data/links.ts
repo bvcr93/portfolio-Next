@@ -34,12 +34,12 @@ export const icons: Icon[] = [
   {
     name: "LinkedIn",
     component: FaLinkedinIn,
-    url: "",
+    url: "https://www.linkedin.com/in/darel-bavcar-17086621b/",
   },
   {
     name: "GitHub",
     component: FaGithub,
-    url: "",
+    url: "https://github.com/bvcr93",
   },
   {
     name: "Mail",
