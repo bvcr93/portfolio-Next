@@ -44,15 +44,17 @@ export default function VerticalTimelineComp() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="November 2012"
+          date="April 2023 - Present"
           icon={<FaSchool />}
           iconStyle={{ background: "rgb(91, 219, 153)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
+            <p>9 agency d.o.o.</p>
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
+          <h4 className="vertical-timeline-element-subtitle">
+            Junior frontend developer
+          </h4>
+          <p> Next JS, Tailwind CSS, Typescript, Prisma, tRPC</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

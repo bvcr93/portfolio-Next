@@ -38,7 +38,7 @@ export default function Projects() {
             I contributed to the engineering bureau app by developing the
             landing page and implementing the calculator functionality folowing
             best UI/UX principals. I have been working with Styled Components
-            and TypeScript
+            and TypeScript. Newly created page is yet to be deployed.
           </div>
         </Link>
       </div>
