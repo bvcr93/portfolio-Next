@@ -33,13 +33,18 @@ const Main = () => {
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {icons.map((icon: Icon) => (
-              <Link href={`${icon.url}`} key={icon.name}>
-                <div className="rounded-full shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <icon.component />
-                </div>
-              </Link>
+              <a
+                href={`${icon.url}`}
+                key={icon.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+              >
+                <icon.component />
+              </a>
             ))}
           </div>
+
           <div className="w-full"></div>
         </div>
       </div>

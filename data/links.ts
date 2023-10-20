@@ -33,7 +33,7 @@ export const icons: Icon[] = [
   {
     name: "LinkedIn",
     component: FaLinkedinIn,
-    url: "https://www.linkedin.com/in/darel-bavcar-17086621b/",
+    url: "https://www.linkedin.com/in/darel-bav%C4%8Dar-17086621b/",
   },
   {
     name: "GitHub",
