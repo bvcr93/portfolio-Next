@@ -106,6 +106,8 @@ export default function Nav() {
                     <div className="py-4 text-sm uppercase">{link.name}</div>
                   </ScrollLink>
                 ))}
+
+                {/* fix links --> cannot go to projects when on project/id */}
               </div>
             </div>
           </div>

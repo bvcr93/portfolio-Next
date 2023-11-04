@@ -28,12 +28,12 @@ export default function ProjectDetails() {
         projectUrl={url}
         tech={tech}
       />
-      <Link href={"/"}>
+      <Link href="/#projects">
         <Button
-          label="Back to projects"
+          label="Back to Projects"
           className="px-2 mt-5 py-2 bg-transparent rounded border border-slate-600 hover:bg-black hover:text-white duration-200"
         />
-      </Link>{" "}
+      </Link>
     </div>
   );
 }
