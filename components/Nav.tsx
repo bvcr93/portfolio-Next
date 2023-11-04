@@ -37,9 +37,7 @@ export default function Nav() {
     <div
       className={`py-5 sticky top-0 w-full  text-black dark:text-white bg-slate-100 dark:bg-black  ${
         showShadow ? "shadow-md" : ""
-      } ${
-        showBlur ? "" : ""
-      } z-50 transition-all duration-300`}
+      } ${showBlur ? "" : ""} z-50 transition-all duration-300`}
     >
       <div className=" flex justify-between items-center maincol ">
         <div className="font-mono italic text-3xl underline underline-offset-4 cursor-pointer">
@@ -59,7 +57,6 @@ export default function Nav() {
               {link.name}
             </ScrollLink>
           ))}
-    
         </div>
 
         <div className="md:hidden">
@@ -99,7 +96,7 @@ export default function Nav() {
                   <ScrollLink
                     className="link"
                     activeClass="active"
-                    to={link.name.toLowerCase()} // use name as id of the section
+                    to={link.name.toLowerCase()}
                     spy={true}
                     smooth={true}
                     offset={-70}

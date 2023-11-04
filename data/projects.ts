@@ -2,13 +2,14 @@ import { StaticImageData } from "next/image";
 import camping from "../public/camping.jpg";
 import clothing from "../public/clothinh.jpg";
 import ai3 from "../public/ai3.jpg";
+import meal from "../public/meal.jpg";
 import hotel2 from "../public/hotel2.jpg";
 import dog2 from "../public/dog2.jpg";
 import tuning from "../public/tune.jpg";
 export interface Project {
   name: string;
   url: string;
-  image: StaticImageData; // Update the type to StaticImageData
+  image: StaticImageData;
   id: number;
   tech: string[];
 }
@@ -55,6 +56,20 @@ export const projects: Project[] = [
     url: "https://bevanda-dq2fhpoxp-nine-agency.vercel.app/",
     image: hotel2,
     id: 5,
-    tech: ["NextJS", "Typescript", "OpenAi API"],
+    tech: ["NextJS", "Typescript"],
+  },
+  {
+    name: "Meal Planner",
+    url: "https://meal-planner-nu.vercel.app/",
+    image: meal,
+    id: 6,
+    tech: [
+      "NextJS",
+      "Typescript",
+      "Tailwind CSS",
+      "Edgestore",
+      "Prisma",
+      "MySQL",
+    ],
   },
 ];
