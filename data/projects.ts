@@ -38,13 +38,6 @@ export const projects: Project[] = [
     tech: ["NextJS", "Typescript"],
   },
   {
-    name: "Car Tuning",
-    url: "https://contentful-blog-tuning.vercel.app/",
-    image: tuning,
-    id: 3,
-    tech: ["NextJS", "Typescript", "Contentful", "Framer Motion"],
-  },
-  {
     name: "Ai Chatbot",
     url: "https://saas-ai-chat.vercel.app/",
     image: ai3,
