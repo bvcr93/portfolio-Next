@@ -53,7 +53,7 @@ export const projects: Project[] = [
   },
   {
     name: "Meal Planner",
-    url: "https://meal-planner-nu.vercel.app/",
+    url: "https://meal-planner-murex.vercel.app/",
     image: meal,
     id: 6,
     tech: [
