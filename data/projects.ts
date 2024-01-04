@@ -5,7 +5,7 @@ import ai3 from "../public/ai3.jpg";
 import meal from "../public/meal.jpg";
 import hotel2 from "../public/hotel2.jpg";
 import dog2 from "../public/dog2.jpg";
-import tuning from "../public/tune.jpg";
+import reminder from "../public/reminder.jpg";
 export interface Project {
   name: string;
   url: string;
@@ -63,6 +63,20 @@ export const projects: Project[] = [
       "Edgestore",
       "Prisma",
       "MySQL",
+    ],
+  },
+  {
+    name: "Reminder",
+    url: "https://reminder-chi.vercel.app/",
+    image: reminder,
+    id: 7,
+    tech: [
+      "NextJS",
+      "Typescript",
+      "Tailwind CSS",
+      "ShadcnUI",
+      "Prisma",
+      "MongoDB",
     ],
   },
 ];
