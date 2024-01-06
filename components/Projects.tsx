@@ -19,12 +19,12 @@ export default function Projects() {
       <div className="w-full py-10 mt-10 text-xl text-center">
         My Side projects
       </div>
-      <div className="w-full md:flex grid  grid-cols-1 place-items-center mt-10 gap-5 ">
+      <div className="w-full md:flex grid grid-cols-1 place-items-center mt-10 gap-5 ">
         <Link
           href="/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover-darken-text md:w-1/2 w-full relative rounded-xl h-72 border border-black justify-center flex flex-col items-center cursor-pointer px-10"
+          className="hover-darken-text md:w-1/2 w-full h-full md:py-8 py-4 relative rounded-xl  border border-black justify-center flex flex-col items-center cursor-pointer px-10"
         >
           <div className="flex w-full justify-between">
             {" "}
