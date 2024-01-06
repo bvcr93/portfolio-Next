@@ -16,6 +16,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "PetCare",
+    url: "https://www.petsandsitters.com/",
+    image: dog2,
+    id: 1,
+    tech: [
+      "Next JS",
+      "TypeScript",
+      "tRPC",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "NextAuth",
+    ],
+  },
+  {
     name: "V18 Rentals",
     url: "https://v18-nu.vercel.app/",
     image: camping,
