@@ -84,7 +84,7 @@ export const projects: Project[] = [
     name: "Issue Tracker",
     url: "https://issue-tracker-rust.vercel.app/",
     image: bug,
-    id: 7,
+    id: 8,
     tech: [
       "NextJS",
       "Typescript",
