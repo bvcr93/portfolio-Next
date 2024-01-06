@@ -6,6 +6,7 @@ import meal from "../public/meal.jpg";
 import hotel2 from "../public/hotel2.jpg";
 import dog2 from "../public/dog2.jpg";
 import reminder from "../public/reminder.jpg";
+import bug from "../public/bug.jpg";
 export interface Project {
   name: string;
   url: string;
@@ -69,6 +70,20 @@ export const projects: Project[] = [
     name: "Reminder",
     url: "https://reminder-chi.vercel.app/",
     image: reminder,
+    id: 7,
+    tech: [
+      "NextJS",
+      "Typescript",
+      "Tailwind CSS",
+      "ShadcnUI",
+      "Prisma",
+      "MongoDB",
+    ],
+  },
+  {
+    name: "Issue Tracker",
+    url: "https://issue-tracker-rust.vercel.app/",
+    image: bug,
     id: 7,
     tech: [
       "NextJS",
