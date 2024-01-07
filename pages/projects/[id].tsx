@@ -1,13 +1,10 @@
+import Button from "@/components/Button";
 import ProjectDemoBanner from "@/components/ProjectDemoBanner";
 import { Project, projects } from "@/data/projects";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import Button from "@/components/Button";
 import Link from "next/link";
+import { useRouter } from "next/router";
 export default function ProjectDetails() {
-  const [selectedColor, setSelectedColor] = useState("blue-500");
-  const [isColorActive, setIsColorActive] = useState(false);
-  console.log(isColorActive);
+
   const router = useRouter();
   const { id } = router.query;
 
@@ -31,7 +28,7 @@ export default function ProjectDetails() {
       <Link href="/#projects">
         <Button
           label="Back to Projects"
-          className="px-2 mt-5 py-2 bg-transparent rounded border border-slate-600 hover:bg-black hover:text-white duration-200"
+          className="px-2 mt-10 py-2 bg-transparent rounded border border-slate-600 hover:bg-black hover:text-white duration-200"
         />
       </Link>
     </div>

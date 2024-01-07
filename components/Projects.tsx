@@ -20,12 +20,7 @@ export default function Projects() {
         My Side projects
       </div>
       <div className="w-full md:flex grid grid-cols-1 place-items-center mt-10 gap-5 ">
-        <Link
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover-darken-text md:w-1/2 w-full h-full md:py-8 py-4 relative rounded-xl  border border-black justify-center flex flex-col items-center cursor-pointer px-10"
-        >
+        <div className="hover-darken-text md:w-1/2 w-full h-full md:py-8 py-4 relative rounded-xl  border border-black justify-center flex flex-col items-center px-10">
           <div className="flex w-full justify-between">
             {" "}
             <h1 className="text-3xl font-bold text-neutral-700">Ingbiro</h1>
@@ -40,7 +35,7 @@ export default function Projects() {
             best UI/UX principals. I have been working with Styled Components
             and TypeScript. Newly created page is yet to be deployed.
           </div>
-        </Link>
+        </div>
       </div>
       <div className="mt-20"></div>
     </div>

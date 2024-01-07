@@ -1,8 +1,7 @@
 import { Icon, icons } from "@/data/links";
-import { useEffect, useState } from "react";
-import w from "@/public/w.jpg";
-import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import Button from "./Button";
 const Main = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -13,11 +12,11 @@ const Main = () => {
   return (
     <div
       id="home"
-      className={`w-full md:h-screen my-20 md:my-0 text-center  text-gray-700 dark:text-white bg-slate-100 dark:bg-black ${
+      className={`w-full md:h-screen md:my-0 text-center  text-gray-700 dark:text-white bg-slate-100 dark:bg-black ${
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
       } transition-all duration-1000 ease-in-out z-0 relative`}
     >
-      <div className="maincol relative w-full  h-full mx-auto flex justify-center items-center">
+      <div className="maincol my-20 md:my-0 relative w-full h-full mx-auto flex justify-center items-center">
         <div className="w-full relative maincol">
           <h1 className="py-4  md:text-7xl text-5xl">
             Hi, I'm <span className="text-indigo-500">Darel</span>
@@ -25,7 +24,7 @@ const Main = () => {
           <h1 className="py-2  text-4xl md:text-5xl mt-5">
             A Front-End Web Developer
           </h1>
-          <p className="py-4  sm:max-w-[70%] m-auto leading-7">
+          <p className="py-4 sm:max-w-[70%] m-auto leading-7 text-lg">
             I specialize in creating high-quality, responsive front-end web
             applications with a focus on user experience and modern design
             principles.
@@ -44,8 +43,19 @@ const Main = () => {
               </a>
             ))}
           </div>
-
-          <div className="w-full"></div>
+          <Link href={'/#contact'}>
+          <div className="items-center justify-center mt-20">
+            <Button
+              label="Got a project?"
+              className="bg-transparent border border-black px-14 py-2 bg-slate-800 text-white"
+            ></Button>
+            <Button
+              label="Let's talk"
+              className="bg-transparent border-black  border px-14 py-2"
+            ></Button>
+          </div>
+          </Link>
+          <div className="w-full mt-10"></div>
         </div>
       </div>
       <svg
