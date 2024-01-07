@@ -47,7 +47,7 @@ const Main = () => {
           <div className="items-center justify-center mt-20">
             <Button
               label="Got a project?"
-              className="bg-transparent border border-black px-14 py-2 bg-slate-800 text-white"
+              className="border border-black px-14 py-2 bg-slate-800 text-white"
             ></Button>
             <Button
               label="Let's talk"
