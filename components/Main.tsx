@@ -43,17 +43,17 @@ const Main = () => {
               </a>
             ))}
           </div>
-          <Link href={'/#contact'}>
-          <div className="items-center justify-center mt-20">
-            <Button
-              label="Got a project?"
-              className="border border-black px-14 py-2 bg-slate-800 text-white"
-            ></Button>
-            <Button
-              label="Let's talk"
-              className="bg-transparent border-black  border px-14 py-2"
-            ></Button>
-          </div>
+          <Link href={"/#contact"}>
+            <div className="items-center justify-center mt-20">
+              <Button
+                label="Got a project?"
+                className="border border-black px-14 py-2 bg-slate-800 text-white w-56"
+              ></Button>
+              <Button
+                label="Let's talk"
+                className="bg-transparent border-black  border px-14 py-2 w-56"
+              ></Button>
+            </div>
           </Link>
           <div className="w-full mt-10"></div>
         </div>

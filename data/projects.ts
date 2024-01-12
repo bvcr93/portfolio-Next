@@ -32,13 +32,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "V18 Rentals",
-    url: "https://v18-nu.vercel.app/",
-    image: camping,
-    id: 2,
-    tech: ["NextJS", "Typescript"],
-  },
-  {
     name: "Ai Chatbot",
     url: "https://saas-ai-chat.vercel.app/",
     image: ai3,
