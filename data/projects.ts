@@ -60,20 +60,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Reminder",
-    url: "https://reminder-chi.vercel.app/",
-    image: reminder,
-    id: 7,
-    tech: [
-      "NextJS",
-      "Typescript",
-      "Tailwind CSS",
-      "ShadcnUI",
-      "Prisma",
-      "MongoDB",
-    ],
-  },
-  {
     name: "Issue Tracker",
     url: "https://issue-tracker-rust.vercel.app/",
     image: bug,
