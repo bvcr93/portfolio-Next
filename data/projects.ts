@@ -1,12 +1,9 @@
 import { StaticImageData } from "next/image";
-import camping from "../public/camping.jpg";
-import clothing from "../public/clothinh.jpg";
 import ai3 from "../public/ai3.jpg";
-import meal from "../public/meal.jpg";
-import hotel2 from "../public/hotel2.jpg";
-import dog2 from "../public/dog2.jpg";
-import reminder from "../public/reminder.jpg";
 import bug from "../public/bug.jpg";
+import dog2 from "../public/dog2.jpg";
+import hotel2 from "../public/hotel2.jpg";
+import meal from "../public/meal.jpg";
 export interface Project {
   name: string;
   url: string;
@@ -45,20 +42,20 @@ export const projects: Project[] = [
     id: 5,
     tech: ["NextJS", "Typescript"],
   },
-  // {
-  //   name: "Meal Planner",
-  //   url: "https://meal-planner-murex.vercel.app/",
-  //   image: meal,
-  //   id: 6,
-  //   tech: [
-  //     "NextJS",
-  //     "Typescript",
-  //     "Tailwind CSS",
-  //     "Edgestore",
-  //     "Prisma",
-  //     "MySQL",
-  //   ],
-  // },
+  {
+    name: "Meal Planner",
+    url: "https://meal-planner-murex.vercel.app/",
+    image: meal,
+    id: 6,
+    tech: [
+      "NextJS",
+      "Typescript",
+      "Tailwind CSS",
+      "Edgestore",
+      "Prisma",
+      "MySQL",
+    ],
+  },
   {
     name: "Issue Tracker",
     url: "https://issue-tracker-rust.vercel.app/",
