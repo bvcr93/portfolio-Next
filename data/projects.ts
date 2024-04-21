@@ -13,21 +13,21 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    name: "PetCare",
-    url: "https://www.petsandsitters.com/",
-    image: dog2,
-    id: 1,
-    tech: [
-      "Next JS",
-      "TypeScript",
-      "tRPC",
-      "Prisma",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "NextAuth",
-    ],
-  },
+  // {
+  //   name: "PetCare",
+  //   url: "https://www.petsandsitters.com/",
+  //   image: dog2,
+  //   id: 1,
+  //   tech: [
+  //     "Next JS",
+  //     "TypeScript",
+  //     "tRPC",
+  //     "Prisma",
+  //     "PostgreSQL",
+  //     "Tailwind CSS",
+  //     "NextAuth",
+  //   ],
+  // },
   {
     name: "Ai Chatbot",
     url: "https://saas-ai-chat.vercel.app/",
