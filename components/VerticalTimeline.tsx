@@ -1,11 +1,9 @@
-import React from "react";
+import { FaSchool } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaSchool } from "react-icons/fa";
-import { useContext } from "react";
 
 export default function VerticalTimelineComp() {
   const theme = "bg-black text-white";
@@ -52,9 +50,9 @@ export default function VerticalTimelineComp() {
             <p>9 agency d.o.o.</p>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Junior frontend developer
+             Frontend developer
           </h4>
-          <p> Next JS, Tailwind CSS, Typescript, Prisma, tRPC</p>
+          <p>React JS, Next JS, Tailwind CSS, Typescript, Prisma, tRPC</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -68,7 +66,7 @@ export default function VerticalTimelineComp() {
           <h4 className="vertical-timeline-element-subtitle">
             Software Engineer
           </h4>
-          <p>Python, MySql, Google Ads, Bash, AWS</p>
+          <p>Python, MySql, Node JS, Google Ads, Bash, AWS</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
