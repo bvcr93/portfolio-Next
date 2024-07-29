@@ -27,7 +27,7 @@ export default function Projects() {
       >
         <div className="hover-darken-text md:w-1/2 w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
           <div className="flex w-full justify-between">
-            <h1 className="text-3xl font-bold text-neutral-700">Legal Engineering</h1>
+            <h1 className="text-3xl font-bold text-neutral-700">Legal Engineering Project</h1>
             <BsArrowRight
               size={30}
               className="hover:transform duration-300 hover:scale-110"
@@ -37,7 +37,7 @@ export default function Projects() {
             I contributed to the engineering bureau app by developing the
             landing page and implementing the calculator functionality following
             best UI/UX principles. I have been working with Styled Components
-            and TypeScript. The newly created page is yet to be deployed.
+            and TypeScript.
           </div>
         </div>
       </Link>
