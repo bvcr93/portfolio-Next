@@ -17,7 +17,7 @@ export default function Projects() {
         ))}
       </div>
       <div className="w-full py-10 mt-10 text-xl text-center">
-        My Side projects
+        Collaborative Projects
       </div>
       <div className="md:flex gap-10 grid grid-cols-1">
         <Link
