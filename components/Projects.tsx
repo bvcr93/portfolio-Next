@@ -19,28 +19,58 @@ export default function Projects() {
       <div className="w-full py-10 mt-10 text-xl text-center">
         My Side projects
       </div>
-      <Link
-        href={"https://ling.hr/"}
-        className="w-full md:flex grid grid-cols-1 place-items-center mt-10 gap-5"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="hover-darken-text md:w-1/2 w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
-          <div className="flex w-full justify-between">
-            <h1 className="text-3xl font-bold text-neutral-700">Legal Engineering Project</h1>
-            <BsArrowRight
-              size={30}
-              className="hover:transform duration-300 hover:scale-110"
-            />
+      <div className="md:flex gap-10 grid grid-cols-1">
+        <Link
+          href={"https://ling.hr/"}
+          className="w-full md:flex grid grid-cols-1 place-items-center mt-10 gap-5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
+            <div className="flex w-full justify-between">
+              <h1 className="text-3xl font-bold text-neutral-700">
+                Legal Engineering Project
+              </h1>
+              <BsArrowRight
+                size={30}
+                className="hover:transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="flex mt-16 text-gray-600 italic font-light">
+              I contributed to the engineering bureau app by developing the
+              landing page and implementing the calculator functionality
+              following best UI/UX principles. I have been working with Styled
+              Components and TypeScript.
+            </div>
           </div>
-          <div className="flex mt-16 text-gray-600 italic font-light">
-            I contributed to the engineering bureau app by developing the
-            landing page and implementing the calculator functionality following
-            best UI/UX principles. I have been working with Styled Components
-            and TypeScript.
+        </Link>
+        <Link
+          href={"https://www.petsandsitters.com/"}
+          className="w-full md:flex grid grid-cols-1 place-items-center mt-10 gap-5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
+            <div className="flex w-full justify-between">
+              <h1 className="text-3xl font-bold text-neutral-700">
+                Pets&Sitters
+              </h1>
+              <BsArrowRight
+                size={30}
+                className="hover:transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="flex mt-16 text-gray-600 italic font-light">
+              I contributed to the Pets & Sitters project by designing the user
+              interface and implementing basic CRUD operations. I utilized
+              Next.js and TypeScript for the development, integrated tRPC for
+              type-safe API communication, and applied Tailwind CSS for styling.
+              Additionally, I incorporated Google APIs to enhance functionality
+              and user experience.
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <div className="mt-20"></div>
     </div>
