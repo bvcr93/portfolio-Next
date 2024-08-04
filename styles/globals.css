@@ -65,3 +65,29 @@ h1 {
     transform: rotateY(360deg);
   }
 }
+
+
+/* styles.css */
+.icon-react {
+  color: #61dafb;
+}
+
+.icon-javascript {
+  color: #f7df1e;
+}
+
+.icon-typescript {
+  color: #3178c6;
+}
+
+.icon-nextjs {
+  color: #000000;
+}
+
+.icon-tailwindcss {
+  color: #38b2ac;
+}
+
+.icon-prisma {
+  color: #0c344b;
+}

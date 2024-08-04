@@ -6,11 +6,19 @@ interface AboutCardProps {
   title: string;
   description: string;
   Icon: FC<IconBaseProps>;
+  startTyping: boolean;
+  color: string;
 }
 
-const AboutCard: FC<AboutCardProps> = ({ title, description, Icon }) => {
+const AboutCard: FC<AboutCardProps> = ({
+  title,
+  description,
+  Icon,
+  startTyping,
+  color,
+}) => {
   const iconRef = useRef<HTMLDivElement>(null);
-  const [showCursor, setShowCursor] = useState(true);
+  const [showCursor, setShowCursor] = useState(false);
 
   const [text] = useTypewriter({
     words: [description],
@@ -24,13 +32,19 @@ const AboutCard: FC<AboutCardProps> = ({ title, description, Icon }) => {
       iconElement.style.animation = "rotateY 10s linear infinite";
     }
 
-    const typingDuration = description.length * 50;
-    const cursorTimeout = setTimeout(() => {
-      setShowCursor(false);
-    }, typingDuration);
+    if (startTyping) {
+      const typingDuration = description.length * 50;
+      setShowCursor(true);
+      const cursorTimeout = setTimeout(() => {
+        setShowCursor(false);
+      }, typingDuration);
 
-    return () => clearTimeout(cursorTimeout);
-  }, [description]);
+      return () => clearTimeout(cursorTimeout);
+    }
+  }, [description, startTyping]);
+
+  // Debugging: log the received props
+  console.log("AboutCard Props:", { title, description, color });
 
   return (
     <div className="w-full bg-slate-50 md:h-60 h-48 shadow-md rounded-xl flex flex-col px-10 py-5 overflow-hidden">
@@ -38,14 +52,14 @@ const AboutCard: FC<AboutCardProps> = ({ title, description, Icon }) => {
         ref={iconRef}
         className="w-full h-12 basis-1/3 flex items-center justify-center"
       >
-        <Icon size={40} />
+        <Icon size={40} style={{ color: color }} />
       </div>
       <div className="basis-1/3 flex justify-center items-center font-semibold text-lg">
         {title}
       </div>
       <div className="basis-1/3 flex items-center text-center font-light">
-        <span>{text}</span>
-        {showCursor && <Cursor />}
+        <span>{startTyping && text}</span>
+        {startTyping && showCursor && <Cursor />}
       </div>
     </div>
   );
