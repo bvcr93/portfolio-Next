@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 mt-10">
         {projects.map((project: Project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>
-            <section className="basis-1/2 flex border relative  cursor-pointer mt-5 md:mt-0 rounded-xl">
+            <section className="basis-1/2 flex border relative cursor-pointer mt-5 md:mt-0 rounded-xl">
               <ProjectItem {...project} />
             </section>
           </Link>
@@ -26,9 +26,9 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
+          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-slate-300 justify-center flex flex-col items-center px-10 bg-slate-50 duration-300 hover:shadow-lg">
             <div className="flex w-full justify-between">
-              <h1 className="text-3xl font-bold text-neutral-700">
+              <h1 className="text-3xl font-bold mt-10 md:mt-0 text-neutral-700 min-h-[3rem] leading-tight">
                 Legal Engineering Project
               </h1>
               <BsArrowRight
@@ -50,14 +50,14 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-black justify-center flex flex-col items-center px-10">
+          <div className="hover-darken-text w-full h-full md:py-8 py-4 relative rounded-xl border border-slate-300 justify-center flex flex-col items-center px-10 bg-slate-50 duration-300 hover:shadow-lg">
             <div className="flex w-full justify-between">
-              <h1 className="text-3xl font-bold text-neutral-700">
+              <h1 className="text-3xl mt-10 font-bold text-neutral-700 min-h-[3rem] leading-tight">
                 Pets&Sitters
               </h1>
               <BsArrowRight
                 size={30}
-                className="hover:transform duration-300 hover:scale-110"
+                className="hover:transform duration-300 hover:scale-110 mt-10"
               />
             </div>
             <div className="flex mt-16 text-gray-600 italic font-light">
